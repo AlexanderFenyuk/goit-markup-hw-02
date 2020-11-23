@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб Студия-Портфолио</title>
-    <!-- подключаем CSS -->
+
+ <!-- подключаем CSS -->
  <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="./index.html" aria-label="логотип сайта" lang="en"><span>Web</span>Studio</a>
-            <ul>
-                <li> <a href="#"> Студия </a> </li>
-                <li> <a href="./portfolio.html"> Портфолио </a> </li>
-                <li> <a href="#"> Контакты </a> </li>
+    <header class="header">
+        <nav class="navigation">
+            <a class="logo" href="./index.html" lang="en"><span class="web">Web</span>Studio</a>
+            <ul class="navigation-list">
+                <li>
+                    <a class="navigation-list-link" href="./index.html"> Студия </a>
+                </li>
+                <li>
+                    <a class="navigation-list-link" href="./portfolio.html"> Портфолио </a>
+                </li>
+                <li>
+                    <a class="navigation-list-link" href="#"> Контакты </a>
+                </li>
             </ul>
         </nav>
         <address>
@@ -23,13 +31,73 @@
         </address>
     </header>
 
+     <main>
+<h1 class="visually-hidden">Портфолио</h1>
 
-    <main>
-    </main>
+<section>
+<h2 class="visually-hidden">Список портфолио</h2>
+
+<!-- фильтр ????  <ul>
+    <li> <a href="#"> Студия </a> </li>
+    <li> <a href="./portfolio.html"> Портфолио </a> </li>
+    <li> <a href="#"> Контакты </a> </li>
+    -->
+
+<ul>
+    <li>
+        <img src="images/01technocryak.jpg" alt="Веб-сайт" width="370" height="294">
+        <h3>Технокряк</h3>
+        <p>Веб-сайт</p>
+    </li>
+    <li>
+        <img src="images/02posterneworlean.jpg" alt="Дизайн" width="370" height="294">
+        <h3>Постер New Orlean vs Golden Star</h3>
+        <p>Дизайн</p>
+    </li>
+    <li>
+        <img src="images/03restaurantseafood.jpg" alt="Приложение" width="370" height="294">
+        <h3>Ресторан Seafood</h3>
+        <p>Приложение</p>
+    </li>
+    <li>
+        <img src="images/04projectprime.jpg" alt="Маркетинг" width="370" height="294">
+        <h3>Проект Prime</h3>
+        <p>Маркетинг</p>
+    </li>
+<li>
+    <img src="images/05projectboxes.jpg" alt="Приложение" width="370" height="294">
+    <h3>Проект Boxes</h3>
+    <p>Приложение</p>
+</li>
+<li>
+    <img src="images/06inspiration.jpg" alt="Веб-сайт" width="370" height="294">
+    <h3>Inspiration has no Borders</h3>
+    <p>Веб-сайт</p>
+</li>
+<li>
+    <img src="images/07publishlimitededition.jpg" alt="Дизайн" width="370" height="294">
+    <h3>Издание Limited Edition</h3>
+    <p>Дизайн</p>
+</li>
+<li>
+    <img src="images/08projectlab.jpg" alt="Маркетинг" width="370" height="294">
+    <h3>Проект LAB</h3>
+    <p>Маркетинг</p>
+</li>
+<li>
+    <img src="images/09growingbusiness.jpg" alt="Приложение" width="370" height="294">
+    <h3>Growing Business</h3>
+    <p>Приложение</p>
+</li>
+
+</ul>
+</section>
+   
+     </main>
 
 <!-- Подвал -->
  <footer>
-     <a href="./index.html" aria-label="логотип сайта" lang="en"><span>Web</span>Studio</a>
+     <a href="./index.html" lang="en"><span>Web</span>Studio</a>
     <address>
     <p>г. Киев, пр-т Леси Украинки, 26</p>
         <ul>
