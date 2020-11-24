@@ -1,4 +1,6 @@
 root {
+  --maine-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
 }
 /* убираем подчёркивание с ссылок */
 a {
@@ -9,7 +11,7 @@ ul {
   list-style: none;
 }
 
-/* скрываем заголовки h1  */
+/* скрываем заголовки */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -17,52 +19,181 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.logo {
+/* логотип web */
+.header-logo-web {
   font-family: Raleway, sans-serif;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
   font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
+  line-height: 31px;
+  color: #2196f3;
+}
+
+/* логотип studio */
+.header-logo-studio {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #000000;
+}
+/*  мыло + телефон + ховер */
+.header-email-link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575;
+}
+.header-tel-link {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575;
+}
+.header-email-link:hover,
+.header-tel-link:hover,
+.header-email-link:focus,
+.header-tel-link:focus {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2196f3;
+}
+
+/*   подвал    */
+.footer {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  background-color: #2f303a;
+}
+.footer-logo-web {
+  color: #2196f3;
+}
+.footer-logo-studio {
+  color: #ffffff;
+}
+.footer-address-list {
+  list-style: none;
+}
+.footer-address-location-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer-address-contact-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+/* hero */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* кнопка для hero - главная страница  */
+.hero-button {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.whatwedo-head {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
   color: #212121;
 }
 
-.web {
-  color: #2196f3;
+.ourteam-head {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #212121;
 }
 
 /* кнопки (фильтр) для портфолио  */
 .btn {
-  border-radius: 4px;
-  font-family: Roboto;
-  font-style: normal;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
   color: #212121;
 }
 
 .navigation {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
 }
+
+.portfolio-navigation-list {
+}
+
 /* стили ссылки при ховере */
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: #2196f3;
 }
+
 /* подсветка ссылки текущей страницы */
 .curentpage {
   color: #2196f3;
