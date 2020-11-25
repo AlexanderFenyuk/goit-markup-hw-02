@@ -1,6 +1,7 @@
-root {
+:root {
   --maine-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
+  --accent-color:#2196f3;
 }
 /* убираем подчёркивание с ссылок */
 a {
@@ -27,17 +28,17 @@ ul {
 
 /* логотип web */
 .header-logo-web {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* логотип studio */
 .header-logo-studio {
-  font-family: Raleway, sans-serif;
+  font-family: var(--secondary-font)
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -47,7 +48,7 @@ ul {
 /*  мыло + телефон + ховер */
 .header-email-link {
   text-decoration: none;
-  font-family: Roboto;
+  font-family: var(--maine-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -56,7 +57,7 @@ ul {
 }
 .header-tel-link {
   text-decoration: none;
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -68,48 +69,14 @@ ul {
 .header-email-link:focus,
 .header-tel-link:focus {
   text-decoration: none;
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-/*   подвал    */
-.footer {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  background-color: #2f303a;
-}
-.footer-logo-web {
-  color: #2196f3;
-}
-.footer-logo-studio {
-  color: #ffffff;
-}
-.footer-address-list {
-  list-style: none;
-}
-.footer-address-location-link {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
-}
-.footer-address-contact-link {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
-}
 
 /* hero */
 .hero {
@@ -117,7 +84,7 @@ ul {
 }
 
 .hero-title {
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -129,7 +96,7 @@ ul {
 
 /* кнопка для hero - главная страница  */
 .hero-button {
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -137,15 +104,34 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   color: #ffffff;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/*  Особенности */
+.features-item-head {
+    font-family: var(--maine-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #212121;
+    text-transform: uppercase;
+}
+.features-item-text {
+    font-family: var(--maine-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #757575;
+}
+/*  Чем мы занимаемся head */
 .whatwedo-head {
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -153,20 +139,34 @@ ul {
   text-align: center;
   color: #212121;
 }
-
+/* Наша команда head*/
 .ourteam-head {
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   color: #212121;
+}
+/* Наша команда list*/
+.ourteam-card-head {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.ourteam-card-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #757575;
 }
 
 /* кнопки (фильтр) для портфолио  */
 .btn {
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -177,7 +177,7 @@ ul {
 }
 
 .navigation {
-  font-family: Roboto, sans-serif;
+  font-family: var(--maine-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -191,12 +191,47 @@ ul {
 /* стили ссылки при ховере */
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* подсветка ссылки текущей страницы */
 .curentpage {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+/*   подвал    */
+.footer {
+  font-family: var(--secondary-font)
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  background-color: #2f303a;
+}
+.footer-logo-web {
+  color: var(--accent-color);
+}
+.footer-logo-studio {
+  color: #ffffff;
+}
+.footer-address-list {
+  list-style: none;
+}
+.footer-address-location-link {
+  font-family: var(--maine-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.footer-address-contact-link {
+  font-family: var(--maine-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
 }
 .address {
   font-style: normal;
