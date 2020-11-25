@@ -1,12 +1,16 @@
 :root {
   --maine-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
-  --accent-color:#2196f3;
+  --accent-color: #2196f3;
 }
 /* убираем подчёркивание с ссылок */
 a {
   text-decoration: none;
 }
+/* a:visited {
+  color: #000000; 
+ } */
+
 /* Убираем точки из списков */
 ul {
   list-style: none;
@@ -38,7 +42,7 @@ ul {
 
 /* логотип studio */
 .header-logo-studio {
-  font-family: var(--secondary-font)
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -64,6 +68,8 @@ ul {
   line-height: 16px;
   color: #757575;
 }
+
+/* стили ссылки при ховере для адреса */
 .header-email-link:hover,
 .header-tel-link:hover,
 .header-email-link:focus,
@@ -76,7 +82,6 @@ ul {
   line-height: 16px;
   color: var(--accent-color);
 }
-
 
 /* hero */
 .hero {
@@ -113,21 +118,21 @@ ul {
 
 /*  Особенности */
 .features-item-head {
-    font-family: var(--maine-font);
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #212121;
-    text-transform: uppercase;
+  font-family: var(--maine-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #212121;
+  text-transform: uppercase;
 }
 .features-item-text {
-    font-family: var(--maine-font);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: #757575;
+  font-family: var(--maine-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
 }
 /*  Чем мы занимаемся head */
 .whatwedo-head {
@@ -151,17 +156,18 @@ ul {
 }
 /* Наша команда list*/
 .ourteam-card-head {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212121;
 }
 .ourteam-card-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #757575;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #757575;
 }
 
 /* кнопки (фильтр) для портфолио  */
@@ -174,8 +180,9 @@ ul {
   letter-spacing: 0.03em;
   border-radius: 4px;
   color: #212121;
+  background: #f5f4fa;
 }
-
+/*  навигация */
 .navigation {
   font-family: var(--maine-font);
   font-weight: 500;
@@ -185,13 +192,38 @@ ul {
   color: #212121;
 }
 
-.portfolio-navigation-list {
+/*ссылки навигации*/
+.navigation-list-link {
+  text-decoration: none;
+  color: #212121;
 }
-
 /* стили ссылки при ховере */
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--accent-color);
+}
+
+/* стили кнопок при ховере в портфолио */
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+/* Наша команда list*/
+.portfolio-card-head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: #212121;
+}
+.portfolio-card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #757575;
 }
 
 /* подсветка ссылки текущей страницы */
@@ -201,7 +233,7 @@ ul {
 
 /*   подвал    */
 .footer {
-  font-family: var(--secondary-font)
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
