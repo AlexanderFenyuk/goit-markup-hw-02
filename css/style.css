@@ -184,7 +184,7 @@ ul {
   letter-spacing: 0.03em;
   border-radius: 4px;
   color: var(--main-color-text);
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 /*  навигация */
 .navigation {
