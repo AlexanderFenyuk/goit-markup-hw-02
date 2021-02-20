@@ -136,6 +136,7 @@ ul {
   line-height: 24px;
   color: #757575;
 }
+
 /*  Чем мы занимаемся head */
 .whatwedo-head {
   font-family: var(--maine-font);
@@ -146,6 +147,7 @@ ul {
   text-align: center;
   color: var(--main-color-text);
 }
+
 /* Наша команда head*/
 .ourteam-head {
   font-family: var(--maine-font);
@@ -156,6 +158,7 @@ ul {
   text-align: center;
   color: var(--main-color-text);
 }
+
 /* Наша команда list*/
 .ourteam-card-head {
   font-family: var(--maine-font);
